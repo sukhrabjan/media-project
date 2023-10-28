@@ -135,6 +135,8 @@ img{
 
 .header__img {
   flex-shrink: 0;
+  width: 34.5625rem;
+  height: 30.0625rem;
 }
 
 @media only screen and (max-width: 1000px ){
