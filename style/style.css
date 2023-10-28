@@ -71,18 +71,18 @@ body {
 
 .header__logo__two {
   width: 2.0625rem;
-  height: 2, 375rem;
+  height: 2.375rem;
 }
 
 .header__two {
   padding-bottom: 60px;
   display: flex;
   justify-content: space-between;
-
 }
 
 .header__inner {
-  width: 31.8rem;
+  width: 100%;
+  max-width: 31.8rem;
 }
 
 .header__text {
@@ -133,4 +133,27 @@ body {
   flex-shrink: 0;
   width: 34.5625rem;
   height: 30.0625rem;
+}
+
+@media only screen and (max-width: 1000px ){
+  .header__img{
+    flex-shrink: 1;
+    margin-top: auto;
+  }
+}
+.header__inner{
+  max-width: 100%;
+}
+@media only screen and (max-width:770px){
+  .header__img{
+    width: 336px;
+    height: 292px;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 10rem;
+  }
+  .header__inner{
+    position: relative;
+    padding-bottom: 4rem;
+  }
 }
