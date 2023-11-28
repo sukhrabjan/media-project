@@ -48,7 +48,8 @@ body {
   padding-right: 1.5625rem;
 
 }
-img{
+
+img {
   max-width: 100%;
   height: auto;
 }
@@ -57,17 +58,17 @@ img{
   padding-bottom: 3.75rem;
   padding-top: 2.6875rem;
   background-repeat: repeat-x;
-  background-image: url(../img/header-backgroung-img.png);
+  background-image: url(../img/Rectangle.png);
 }
 
 .header__content {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   padding-bottom: 7rem;
 }
 
-.header__inner{
+.header__inner {
   width: 100%;
   max-width: 31.8rem;
   margin-right: 0.8rem;
@@ -130,7 +131,7 @@ img{
   line-height: 162.5%;
   cursor: pointer;
   letter-spacing: 0.64px;
-  border-radius: 0.625rem ;
+  border-radius: 0.625rem;
   background: var(--blue_04, #5A98D0);
   box-shadow: 5px 10px 20px 0px rgba(53, 110, 173, 0.20);
 }
@@ -139,26 +140,6 @@ img{
   flex-shrink: 0;
 }
 
-@media only screen and (max-width: 1000px ){
-  .header__img{
-    flex-shrink: 1;
-    margin-top: auto;
-  }
-}
-
-@media only screen and (max-width:770px){
-  .header__img{
-    width: 336px;
-    height: 292px;
-    position: absolute;
-    right: 1.5rem;
-    bottom: 10rem;
-  }
-  .header__inner{
-    position: relative;
-    padding-bottom: 4rem;
-  }
-}
 
 
 
@@ -172,22 +153,24 @@ img{
   color: #000;
   margin-top: 0;
   margin-bottom: 64px;
-text-align: center;
-font-family: Roboto;
-font-size: 36px;
-font-style: normal;
-font-weight: 300;
-line-height: 46px; /* 127.778% */
-letter-spacing: 1.8px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 127.778%;
+  letter-spacing: 1.8px;
 }
-.client__nav {
 
-}
+.client__nav {}
+
 .client__ul {
-  
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
+
 .client__li {
   list-style: none;
   padding-top: 43px;
@@ -200,11 +183,13 @@ letter-spacing: 1.8px;
   background: #FFF;
   box-shadow: 5px 20px 50px 0px rgba(16, 112, 177, 0.20);
 }
-.client__inner__img{
+
+.client__inner__img {
   display: flex;
   justify-content: center;
   margin-bottom: 51px;
 }
+
 .client__img {
   width: 171px;
   height: 121px;
@@ -216,13 +201,14 @@ letter-spacing: 1.8px;
   margin-bottom: 14px;
   margin-top: 0;
   color: var(--Blue_01, #1F3F68);
-font-family: Roboto;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px; /* 150% */
-letter-spacing: 1px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 1px;
 }
+
 .client__inner__text__two {
   margin-top: 0;
   color: var(--Blue_01, #1F3F68);
@@ -233,19 +219,92 @@ letter-spacing: 1px;
   line-height: 162.5%;
   letter-spacing: 0.8px;
 }
+
 .client__link {
   display: flex;
   text-decoration: none;
   color: var(--blue_04, #5A98D0);
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 214.286%; 
-letter-spacing: 0.7px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 214.286%;
+  letter-spacing: 0.7px;
 }
-.client__link::before{
-content: "";
-background-repeat: no-repeat;
-background-image: url(../img/client-logo.svg);
+
+.client__link::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url(../img/client-logo.svg);
+}
+
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+  .header {
+
+    background-image: url(../img/Rectangle@2x.png);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .header__img {
+    flex-shrink: 1;
+    margin-top: auto;
+    width: 31.25rem;
+  }
+}
+
+@media only screen and (max-width:770px) {
+  .header {
+    padding-bottom: 5.43rem;
+  }
+
+  .header__img {
+    width: 24.5625rem;
+    height: 20.818125rem;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 10rem;
+  }
+
+  .header__inner {
+    position: relative;
+    padding-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width:650px) {
+  .header__two {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__img {
+    position: static;
+  }
+
+  .header__inner {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .header__text__two {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width:375px){
+  .header__text{
+    width: 343px;
+  }
 }
