@@ -50,7 +50,7 @@ body {
 }
 img{
   max-width: 100%;
-  height: 0;
+  height: auto;
 }
 
 .header {
@@ -135,8 +135,6 @@ img{
 
 .header__img {
   flex-shrink: 0;
-  width: 34.5625rem;
-  height: 30.0625rem;
 }
 
 @media only screen and (max-width: 1000px ){
@@ -226,14 +224,14 @@ line-height: 30px; /* 150% */
 letter-spacing: 1px;
 }
 .client__inner__text__two {
-  width: 268px;
+  margin-top: 0;
   color: var(--Blue_01, #1F3F68);
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 26px; /* 162.5% */
-letter-spacing: 0.8px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 162.5%;
+  letter-spacing: 0.8px;
 }
 .client__link {
   display: flex;
@@ -243,7 +241,7 @@ font-family: Roboto;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
-line-height: 30px; /* 214.286% */
+line-height: 214.286%; 
 letter-spacing: 0.7px;
 }
 .client__link::before{
