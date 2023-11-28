@@ -67,6 +67,12 @@ img{
   padding-bottom: 7rem;
 }
 
+.header__inner{
+  width: 100%;
+  max-width: 31.8rem;
+  margin-right: 0.8rem;
+}
+
 .header__logo {
   display: flex;
   width: 2.8125rem;
@@ -84,10 +90,6 @@ img{
   justify-content: space-between;
 }
 
-.header__inner {
-  width: 100%;
-  max-width: 31.8rem;
-}
 
 .header__text {
   margin-top: 0;
@@ -143,9 +145,7 @@ img{
     margin-top: auto;
   }
 }
-.header__inner{
-  max-width: 100%;
-}
+
 @media only screen and (max-width:770px){
   .header__img{
     width: 336px;
