@@ -58,7 +58,7 @@ img {
   padding-bottom: 3.75rem;
   padding-top: 2.6875rem;
   background-repeat: repeat-x;
-  background-image: url(../img/Rectangle.png);
+  background-image: url(../img/Rectangle.desktop.png);
 }
 
 .header__content {
@@ -106,6 +106,7 @@ img {
 
 .header__text__two {
   width: 26.5625rem;
+  opacity: 0.6;
   margin-top: 0;
   color: var(--Blue_01, #1F3F68);
   font-family: Roboto;
@@ -144,8 +145,8 @@ img {
 
 
 .client {
-  padding-top: 63px;
-  padding-bottom: 113px;
+  padding-top: 3.9375rem;
+  padding-bottom: 7.0625rem;
 
 }
 
@@ -298,13 +299,79 @@ only screen and (min-resolution: 2dppx) {
   }
 
   .header__text__two {
+    opacity: 0.6;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-@media only screen and (max-width:375px){
-  .header__text{
-    width: 343px;
+@media only screen and (max-width:375px) {
+  .header {
+    background-image: url(../img/Rectangle.mobile-phone.png);
+    padding-top: 1rem;
+    padding-bottom: 2.5625rem;
+  }
+  .header__inner{
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .header__two {
+    padding-bottom: 0;
+  }
+
+  .header__content {
+    padding-bottom: 0;
+    margin-bottom: 1.8125rem;
+  }
+
+  .header__text {
+    width: 21.4375rem;
+    height: 4.75rem;
+    margin-bottom: 0.6875rem;
+    color: var(--Blue_01, #1F3F68);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.28px;
+
+  }
+
+  .header__text__two {
+    opacity: 0.6;
+    width: 100%;
+    max-width: 21.4375rem;
+    height: 6rem;
+    margin-bottom: 2rem;
+    color: var(--Blue_01, #1F3F68);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.5%;
+    letter-spacing: 0.8px;
+  }
+
+  .header__button {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 216.667%;
+  }
+
+  .header__img {
+    display: none;
   }
 }
