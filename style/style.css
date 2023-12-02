@@ -153,17 +153,16 @@ img {
 .client__heading__text {
   color: #000;
   margin-top: 0;
-  margin-bottom: 64px;
+  margin-bottom: 4rem;
   text-align: center;
   font-family: Roboto;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 300;
   line-height: 127.778%;
   letter-spacing: 1.8px;
 }
 
-.client__nav {}
 
 .client__ul {
   display: flex;
@@ -173,33 +172,36 @@ img {
 }
 
 .client__li {
+  width:22.4375rem ;
+  height: 30rem;
   list-style: none;
-  padding-top: 43px;
-  padding-left: 32px;
-  padding-right: 58px;
-  padding-bottom: 44px;
-  width: 359px;
-  height: 480px;
+  padding-top: 2.6875rem;
+  padding-left: 2rem;
+  padding-right: 2rem ;
+  padding-bottom: 3.625rem;
   border-radius: 10px;
   background: #FFF;
   box-shadow: 5px 20px 50px 0px rgba(16, 112, 177, 0.20);
 }
 
+.client__li:not(:last-child){
+  margin-right: 2rem;
+}
 .client__inner__img {
   display: flex;
   justify-content: center;
-  margin-bottom: 51px;
+  margin-bottom: 2.8125rem;
 }
 
 .client__img {
-  width: 171px;
-  height: 121px;
+  width: 10.6875rem;
+  height: 7.5625rem;
 
 }
 
 .client__inner__text {
-  width: 283px;
-  margin-bottom: 14px;
+  width:18.125rem ;
+  margin-bottom: 0.875rem;
   margin-top: 0;
   color: var(--Blue_01, #1F3F68);
   font-family: Roboto;
@@ -212,6 +214,8 @@ img {
 
 .client__inner__text__two {
   margin-top: 0;
+  width: 18.125rem;
+  opacity: 0.6;
   color: var(--Blue_01, #1F3F68);
   font-family: Roboto;
   font-size: 16px;
@@ -223,6 +227,7 @@ img {
 
 .client__link {
   display: flex;
+  align-items: center;
   text-decoration: none;
   color: var(--blue_04, #5A98D0);
   font-family: Roboto;
@@ -233,10 +238,15 @@ img {
   letter-spacing: 0.7px;
 }
 
-.client__link::before {
+.client__link::after {
+margin-left: 20px;
+  width: 1.375rem;
+  height: 1.3125rem ;
+  display: flex;
+  justify-content: center;
   content: "";
   background-repeat: no-repeat;
-  background-image: url(../img/client-logo.svg);
+  background-image: url(../img/ic_arrow_forward_24px.svg);
 }
 
 
@@ -254,6 +264,7 @@ only screen and (min-resolution: 2dppx) {
   }
 }
 
+/* HEADER SECTION */
 @media only screen and (max-width: 1000px) {
   .header__img {
     flex-shrink: 1;
@@ -375,3 +386,5 @@ only screen and (min-resolution: 2dppx) {
     display: none;
   }
 }
+
+/* HEADER SECTION */
