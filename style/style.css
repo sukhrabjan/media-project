@@ -41,7 +41,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 97.875rem;
+  max-width: 74.375rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.5625rem;
@@ -251,6 +251,111 @@ img {
 }
 
 
+.project {}
+
+.project__content {
+  margin-bottom: 4rem;
+}
+
+.project__text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 71.25rem;
+  margin-bottom: 3.5rem;
+  margin-top: 0;
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 127.778%;
+  /* 127.778% */
+  letter-spacing: 1.8px;
+
+}
+
+.project__text__p {
+  margin-top: 0;
+  width: 100%;
+  max-width: 46.875rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #222;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 162.5%;
+  /* 162.5% */
+  letter-spacing: 0.8px;
+}
+
+
+
+
+.project__text__inner {
+  position: relative;
+  margin-bottom: 2rem;
+  width: 1140px;
+  height: 480px;
+  background-image: url(../img/smart_home.png);
+
+}
+
+.project__text__smart {
+  position: absolute;
+  top: 64px;
+  right: 64px;
+  width: 24.875rem;
+  color: #FFF;
+  text-align: right;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143.75%;
+  /* 143.75% */
+  letter-spacing: 1.6px;
+}
+
+.project__text__inner__sparklite {
+  width: 34.625rem;
+height: 417px;
+  position: relative;
+  background-image: url(../img/footer_img-2.png);
+  
+}
+
+.project__text__sparklite {
+  top: 32px;
+  left: 32px;
+  width: 11.4375rem;
+  /* position: absolute; */
+  color: var(--white, #FFF);
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164.286%;
+  /* 164.286% */
+  letter-spacing: 1.4px;
+}
+
+.project__text__app {
+  width: 7.875rem;
+  /* color: var(--white, #FFF); */
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164.286%;
+  /* 164.286% */
+  letter-spacing: 1.4px;
+}
+
+
 
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -426,7 +531,7 @@ only screen and (min-resolution: 2dppx) {
   .client__inner__text {
     width: 17.2638125rem;
     height: 3.288375rem;
-    margin-bottom: 0.875rem ;
+    margin-bottom: 0.875rem;
     color: var(--Blue_01, #1F3F68);
     font-family: Roboto;
     font-size: 20px;
@@ -441,6 +546,21 @@ only screen and (min-resolution: 2dppx) {
     width: 17.2638125rem;
     height: 5.7051875rem;
     margin-bottom: 1.625rem;
-  
+
+  }
+}
+
+@media only screen and (max-width:375px) {
+  .client__heading__text {
+    width: 331px;
+    height: 55px;
+    margin-bottom: 2rem;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
   }
 }
