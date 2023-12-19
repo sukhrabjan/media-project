@@ -1131,4 +1131,8 @@ only screen and (min-resolution: 2dppx) {
   .footer__content__two{
     padding-bottom: 2.3125rem;
   }
+  .container{
+    padding-left: 0.93px;
+    padding-right: 0.93px;
+  }
 }
