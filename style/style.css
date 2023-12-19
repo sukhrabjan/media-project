@@ -454,7 +454,6 @@ img {
 .footer__div {
   display: flex;
 
-
 }
 
 .footer__div:not(:last-child) {
@@ -476,7 +475,7 @@ img {
 
 .footer__text__two {
   width: 316.977px;
-  height: 48px;
+ 
   margin-top: 0;
   flex-shrink: 0;
   color: var(--white, #FFF);
@@ -698,8 +697,8 @@ only screen and (min-resolution: 2dppx) {
 
 @media only screen and (max-width:375px) {
   .client__heading__text {
-    width: 331px;
-    height: 55px;
+    width: 20.6875rem;
+    height: 3.4375rem;
     margin-bottom: 2rem;
     color: #000;
     text-align: center;
@@ -745,8 +744,8 @@ only screen and (min-resolution: 2dppx) {
   }
 
   .project__text__smart {
-    width: 398px;
-    height: 112px;
+    width: 24.875rem;
+    height: 7rem;
     flex-shrink: 0;
     color: #FFF;
     text-align: right;
@@ -816,7 +815,7 @@ only screen and (min-resolution: 2dppx) {
   }
 
   .project__text {
-    width: 343px;
+    width: 21.4375rem;
     color: #000;
     text-align: center;
     font-family: Roboto;
@@ -827,7 +826,7 @@ only screen and (min-resolution: 2dppx) {
   }
 
   .project__text__p {
-    width: 343px;
+    width: 21.4375rem;
     color: #222;
     margin-bottom: 0;
     text-align: center;
@@ -867,8 +866,8 @@ only screen and (min-resolution: 2dppx) {
 
   .project__text__inner__sparklite {
     position: relative;
-    width: 343px;
-    height: 255px;
+    width:21.4375rem;
+    height: 15.9375rem;
     flex-shrink: 0;
     margin-bottom: 1rem;
 
@@ -878,8 +877,8 @@ only screen and (min-resolution: 2dppx) {
     position: absolute;
     top: 16px;
     left: 16px;
-    width: 201.567px;
-    width: 201.567px;
+    width: 12.5979375rem;
+    width: 12.5979375rem;
     height: 17.592px;
     flex-shrink: 0;
     color: var(--white, #FFF);
@@ -892,8 +891,8 @@ only screen and (min-resolution: 2dppx) {
 
   .project__text__inner__app {
     position: relative;
-    width: 343px;
-    height: 262px;
+    width: 21.4375rem;
+    height:16.375rem;
     flex-shrink: 0;
 
   }
@@ -902,7 +901,7 @@ only screen and (min-resolution: 2dppx) {
     position: absolute;
     top: 16px;
     left: 16px;
-    width: 282.319px;
+    width: 17.6449375rem;
     color: var(--white, #FFF);
     font-family: Roboto;
     font-size: 16px;
@@ -929,8 +928,8 @@ only screen and (min-resolution: 2dppx) {
   }
 
   .footer__words {
-    width: 336px;
-    height: 82px;
+    width: 21rem;
+    height: 5.125rem;
     flex-shrink: 0;
     color: var(--white, #FFF);
     font-family: Roboto;
@@ -943,8 +942,8 @@ only screen and (min-resolution: 2dppx) {
   }
 
   .footer__text {
-    width: 336px;
-    height: 96px;
+    width: 21rem;
+    height: 6rem;
     flex-shrink: 0;
     color: var(--white, #FFF);
     font-family: Roboto;
@@ -958,7 +957,7 @@ only screen and (min-resolution: 2dppx) {
 
   .footer__link {
     display: inline-block;
-    width: 133px;
+    width: 8.3125rem;
     height: 31px;
     color: #FFF;
     text-align: center;
@@ -999,8 +998,8 @@ only screen and (min-resolution: 2dppx) {
   }
 
   .footer__text__two {
-    width: 455px;
-    height: 21px;
+    width: 28.4375rem;
+   
     color: var(--white, #FFF);
     font-family: Roboto;
     font-size: 16px;
@@ -1016,7 +1015,7 @@ only screen and (min-resolution: 2dppx) {
   }
 
   .footer__text__reserved {
-    width: 210px;
+    width: 13.5rem;
     color: var(--white, #FFF);
     font-family: Roboto;
     font-size: 16px;
@@ -1032,16 +1031,26 @@ only screen and (min-resolution: 2dppx) {
 @media only screen and (max-width:374px) {
 
   .footer__inner {
-    padding-left: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
   }
-  .footer__inner__words{
+
+  .footer__inner__words {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding-bottom: 40px;
     margin-right: 0;
+    padding-top: 18px;
   }
 
   .footer__words {
+    width: 16.4374375rem;
+    display: flex;
+    justify-content: center;
+    height: 3.1875rem;
     color: var(--white, #FFF);
     text-align: center;
     font-family: Roboto;
@@ -1049,15 +1058,11 @@ only screen and (min-resolution: 2dppx) {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 342.999px;
-    height: 51px;
-    flex-shrink: 0;
-    opacity: 0.6;
   }
 
   .footer__text {
-    width: 343px;
-    height: 97px;
+    width: 21.4375rem;
+    height: 6.0625rem;
     margin-bottom: 0;
     flex-shrink: 0;
     color: var(--white, #FFF);
@@ -1070,7 +1075,60 @@ only screen and (min-resolution: 2dppx) {
     /* 162.5% */
     letter-spacing: 0.8px;
   }
-  .footer__link{
-    margin-bottom: 41px;
+
+  .footer__link {
+    margin-bottom: 2.5625rem;
+  }
+
+  .project__img__inner {
+    padding-bottom: 4rem;
+  }
+
+
+  .footer__span {
+    width: 1.0625rem;
+    height: 1.125rem;
+    margin-right: 1.4375rem;
+
+  }
+
+  .footer__text__two {
+    width: 19rem;
+    color: var(--white, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    margin-bottom: 0;
+  }
+
+
+  .footer__div:not(:last-child) {
+    margin-bottom: 1rem;
+
+  }
+
+  .footer__text__inner{
+      display: flex;
+      justify-content: center;
+      padding: 0;
+  }
+  .footer__text__reserved {
+    width: 21.4375rem;
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    letter-spacing: 0.8px;
+  }
+
+  .footer__content__two{
+    padding-bottom: 2.3125rem;
   }
 }
